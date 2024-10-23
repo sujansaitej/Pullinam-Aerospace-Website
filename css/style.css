@@ -12,6 +12,7 @@ h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif; /* Bold headings with clean typeface */
     color: #004aad; /* Accent color for headings */
     font-weight: bold;
+    font-size: 40px;
 }
 
 .container {
@@ -87,7 +88,7 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 48px;
+    font-size: 106px;
     color: #ffffff;
     z-index: 2;
     font-family: 'Montserrat', sans-serif;

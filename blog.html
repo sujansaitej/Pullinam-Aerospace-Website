@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pullinam Aerospace - Blogs">
+    <title>Blogs - Pullinam Aerospace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Body styling for dark theme */
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #e0e0e0; /* Light text color for contrast */
+            font-family: Arial, sans-serif; /* Font family */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styling */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Blog boxes styling */
+        .blog-box {
+            background-color: #1e1e1e; /* Darker box background */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+            transition: transform 0.3s ease;
+        }
+
+        .blog-box:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff; /* White color for headings */
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #ffffff; /* White color for blog titles */
+        }
+
+        p {
+            font-size: 16px;
+            color: #cccccc; /* Slightly lighter text for paragraphs */
+        }
+
+        .view-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-more:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Blog Section -->
+    <div class="container">
+        <h2>Aerospace Blogs</h2>
+
+        <!-- Blog 1 -->
+        <div class="blog-box">
+            <h3>The Evolution of Light-Sport Aircraft: A Game Changer in Modern Aviation</h3>
+            <p>Explore the significance of Light-Sport Aircraft (LSA) in the aviation industry. Learn how Pullinam’s innovative PAT-LSA1 is setting new standards in ultralight aircraft with its electric and non-electric options, making aviation more accessible than ever before.</p>
+            <a href="blog1.html" class="view-more">View More</a>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-box">
+            <h3>Sustainable Aviation: The Role of Electric and SAF-powered Aircraft</h3>
+            <p>Discover how Pullinam Aerospace is contributing to sustainable aviation with electric and Sustainable Aviation Fuel (SAF) aircraft. This blog dives into the 4-6 seater SAF-powered aircraft and explores the future of eco-friendly aviation technologies.</p>
+            <a href="blog2.html" class="view-more">View More</a>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-box">
+            <h3>Flying Bikes: The Future of Urban Mobility</h3>
+            <p>Learn about Pullinam Aerospace’s groundbreaking invention, Asia’s First Flying Bike, and how it could change the future of urban transportation. Understand the challenges and possibilities of integrating flying vehicles into everyday life.</p>
+            <a href="blog3.html" class="view-more">View More</a>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="blog-box">
+            <h3>The Roadmap to Becoming a Global Leader in Aviation</h3>
+            <p>Read about Pullinam Aerospace’s ambitious long-term goals, including achieving a revenue milestone of INR 10,000 Crore and becoming a global leader in sustainable aircraft manufacturing. Learn about their plans for market expansion and advanced aviation technologies.</p>
+            <a href="blog4.html" class="view-more">View More</a>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="blog-box">
+            <h3>AI and Predictive Maintenance: Transforming Aircraft Safety and Efficiency</h3>
+            <p>Dive into how Pullinam Aerospace is using AI-driven predictive maintenance to enhance aircraft safety and efficiency. Discover the role of artificial intelligence in preventing mechanical failures and improving operational performance in aviation.</p>
+            <a href="blog5.html" class="view-more">View More</a>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="blog-box">
+            <h3>Flying Clubs: Inspiring the Next Generation of Pilots</h3>
+            <p>Explore Pullinam Aerospace’s initiative to establish flying clubs in 100 engineering universities across India. Learn how these clubs will democratize access to aviation and inspire the next generation of pilots and aviation enthusiasts.</p>
+            <a href="blog6.html" class="view-more">View More</a>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        // Load the navbar from an external file
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+</body>
+</html>
