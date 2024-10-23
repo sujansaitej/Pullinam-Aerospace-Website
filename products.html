@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pullinam Aerospace - Our Aircraft">
+    <title>Our Aircraft - Pullinam Aerospace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Aircraft Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Our Aircraft</h2>
+            <p>Our product line is designed to meet diverse aviation needs, from recreational microlight aircraft to advanced electric and SAF-powered vehicles for business and regional transport. Products in development include:</p>
+            <ul>
+                <li>2-seater Microlight Aircraft</li>
+                <li>2-seater Light-Sport Aircraft (LSA)</li>
+                <li>2-seater STOL and CTOL Aircraft (electric and non-electric options)</li>
+                <li>4-6 seater Aircraft powered by SAF or electric propulsion systems</li>
+                <li>4-seater VTOL Aircraft</li>
+                <li>10-seater SAF-powered Aircraft</li>
+            </ul>
+            <p>Our first product, the PAT-LSA1, is a lightweight, high-performance electric and non-electric Light Sport Aircraft (LSA), which will set the foundation for our upcoming innovations in both electric propulsion and sustainable aviation.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        // Load the navbar from an external file
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+</body>
+</html>

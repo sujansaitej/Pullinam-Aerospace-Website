@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pullinam Aerospace - Leadership">
+    <title>Leadership - Pullinam Aerospace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Leadership Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Leadership</h2>
+
+            <h3>C.S. Karunakaran – Founder & CEO</h3>
+            <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike and played a crucial role in drone operations during the COVID-19 pandemic. His visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in India.</p>
+
+            <h3>S.B. Shiva Prasaath – Co-founder & Chief Operating Officer</h3>
+            <p>S.B. Shiva Prasaath, an AI expert, co-founded PULLINAM Aerospace Technologies with the mission to integrate cutting-edge technology into aviation. He oversees strategic development, operations, and technological innovation. With a portfolio of research in AI, machine learning, and embedded systems, he contributes to the advancement of predictive maintenance, automation, and smart aviation technologies.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        // Load the navbar from an external file
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+</body>
+</html>

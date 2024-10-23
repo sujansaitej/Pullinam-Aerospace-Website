@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pullinam Aerospace - Leading Innovations in Sustainable Aviation Technology.">
+    <title>Pullinam Aerospace Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Homepage Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to PULLINAM Aerospace Technologies</h1>
+            <p>At Pullinam Aerospace Technologies, we are committed to pioneering the future of aviation through the development of environmentally friendly aircraft. As an emerging Indian startup, we specialize in the design and manufacture of light aircraft, including electric and non-electric models, with a strong focus on reducing carbon emissions.</p>
+            <p>Our mission is to create a sustainable future in aviation by offering high-performance, eco-friendly solutions that meet the global emissions challenge.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        // Load the navbar from an external file
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+</body>
+</html>

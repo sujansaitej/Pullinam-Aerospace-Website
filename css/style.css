@@ -10,7 +10,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif; /* Bold headings with clean typeface */
-    color: #0061f2; /* Accent color for headings */
+    color: #004aad; /* Accent color for headings */
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 /* Navbar */
 header {
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,9 +35,9 @@ header {
 }
 
 header .logo {
-    max-width: 150px; /* Adjust this size as necessary */
+    max-width: 150px;
     height: auto;
-    margin-left: 20px; /* Adds some padding to the left */
+    margin-left: 20px;
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 56px;
+    font-size: 48px;
     color: #ffffff;
     z-index: 2;
     font-family: 'Montserrat', sans-serif;
@@ -126,7 +126,7 @@ nav ul li a:hover {
 
 .section h2 {
     font-size: 36px;
-    color: #0061f2;
+    color: #004aad;
     margin-bottom: 20px;
 }
 
@@ -164,7 +164,7 @@ nav ul li a:hover {
 
 .feature-card h3 {
     font-size: 24px;
-    color: #0061f2;
+    color: #004aad;
 }
 
 .feature-card p {
@@ -173,9 +173,69 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
 /* CTA Section */
 .cta-section {
-    background-color: #0061f2;
+    background-color: #004aad;
     color: #ffffff;
     padding: 40px 0;
     text-align: center;
