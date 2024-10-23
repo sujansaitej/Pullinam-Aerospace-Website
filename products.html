@@ -6,6 +6,63 @@
     <meta name="description" content="Pullinam Aerospace - Our Aircraft">
     <title>Our Aircraft - Pullinam Aerospace</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Products Section Styles */
+        .products-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+
+        .product-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .product-box p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .product-box a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-box a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .product-box {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -13,19 +70,47 @@
     <div id="navbar-placeholder"></div>
 
     <!-- Aircraft Products Section -->
-    <section id="products" class="section">
-        <div class="container">
-            <h2>Our Aircraft</h2>
-            <p>Our product line is designed to meet diverse aviation needs, from recreational microlight aircraft to advanced electric and SAF-powered vehicles for business and regional transport. Products in development include:</p>
-            <ul>
-                <li>2-seater Microlight Aircraft</li>
-                <li>2-seater Light-Sport Aircraft (LSA)</li>
-                <li>2-seater STOL and CTOL Aircraft (electric and non-electric options)</li>
-                <li>4-6 seater Aircraft powered by SAF or electric propulsion systems</li>
-                <li>4-seater VTOL Aircraft</li>
-                <li>10-seater SAF-powered Aircraft</li>
-            </ul>
-            <p>Our first product, the PAT-LSA1, is a lightweight, high-performance electric and non-electric Light Sport Aircraft (LSA), which will set the foundation for our upcoming innovations in both electric propulsion and sustainable aviation.</p>
+    <section class="products-section">
+        <div class="product-box">
+            <h3>2-seater Microlight Aircraft</h3>
+            <p>A lightweight, agile aircraft for recreational flying, designed for two passengers.</p>
+            <a href="microlight.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>2-seater Light-Sport Aircraft (LSA)</h3>
+            <p>An efficient, high-performance aircraft for sport flying, ideal for private aviation.</p>
+            <a href="lsa.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>2-seater STOL and CTOL Aircraft</h3>
+            <p>Short Takeoff and Landing (STOL) and Conventional Takeoff and Landing (CTOL) aircraft with electric and non-electric versions.</p>
+            <a href="stol-ctol.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>4-6 seater SAF/Electric Aircraft</h3>
+            <p>Aircraft designed to be powered by Sustainable Aviation Fuel (SAF) or electric propulsion, offering eco-friendly solutions for regional transport.</p>
+            <a href="saf-electric.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>4-seater VTOL Aircraft</h3>
+            <p>A Vertical Take-Off and Landing aircraft designed for urban mobility and short-distance travel.</p>
+            <a href="vtol.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>10-seater SAF Aircraft</h3>
+            <p>A larger, SAF-powered aircraft designed for efficient regional flights.</p>
+            <a href="saf-10seater.html">View More</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Future Products for Space Tourism</h3>
+            <p>Our vision for future space exploration includes vehicles designed for space tourism.</p>
+            <a href="space-tourism.html">View More</a>
         </div>
     </section>
 
