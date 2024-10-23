@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Milestones of Pullinam Aerospace Technologies.">
+    <title>Milestones | Pullinam Aerospace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="logo">Pullinam Aerospace</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mission.html">Announcements</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="milestones.html">Milestones</a></li>
+                    <li><a href="leadership.html">Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="section">
+        <div class="container">
+            <h2>Our Milestones</h2>
+            <div class="milestone-timeline">
+
+                <div class="milestone fade-in-left">
+                    <h3>2023</h3>
+                    <p><strong>Company Establishment</strong>: Pullinam Aerospace was incorporated in May 2023, marking the beginning of their aerospace innovation journey.</p>
+                </div>
+
+                <div class="milestone fade-in-right">
+                    <h3>2024</h3>
+                    <p><strong>Partnership with MLRIT</strong>: In October 2024, Pullinam Aerospace collaborated with MLRIT to develop a 10-seater turboprop aircraft.</p>
+                </div>
+
+                <div class="milestone fade-in-left">
+                    <h3>2024</h3>
+                    <p><strong>Leadership and Vision</strong>: The company is led by Selvaraj Karunakaran and Sudha Balamurugan, pioneering their entry into aerospace technology.</p>
+                </div>
+
+                <div class="milestone fade-in-right">
+                    <h3>2024</h3>
+                    <p><strong>Industry Collaborations</strong>: Pullinam initiated talks with major aerospace companies for collaborative research at AeroCON 2024.</p>
+                </div>
+
+                <div class="milestone fade-in-left">
+                    <h3>2024</h3>
+                    <p><strong>AeroCON 2024 Participation</strong>: Pullinam Aerospace is preparing to showcase their innovations at AeroCON 2024 in Bengaluru.</p>
+                </div>
+
+                <div class="milestone fade-in-right">
+                    <h3>2024</h3>
+                    <p><strong>Strategic Growth</strong>: The company is exploring more collaborations in unmanned aerial systems and regional aircraft design.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pullinam Aerospace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-align: center;
+            border: 2px solid #007bff;
+            border-radius: 20px;
+        }
+
+        .logo {
+            color: #fff;
+            margin: 0;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            padding: 8px 12px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #e0e0e0;
+            border-color: #fff;
+        }
+
+        /* Milestone Styles */
+        .section {
+            padding: 60px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .milestone-timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .milestone {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .milestone h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .milestone p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: fadeInLeft 1s forwards;
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            animation: fadeInRight 1s forwards;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .milestone {
+                width: 95%;
+            }
+        }
+
+    </style>
+
+</body>
+</html>
