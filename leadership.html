@@ -6,6 +6,67 @@
     <meta name="description" content="Pullinam Aerospace - Leadership">
     <title>Leadership - Pullinam Aerospace</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Leadership Section Styles */
+        .leadership-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+
+        .leader-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 40%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .leader-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .leader-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .leader-box p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .leader-box a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .leader-box a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .leadership-section {
+                flex-direction: column;
+            }
+
+            .leader-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -13,15 +74,17 @@
     <div id="navbar-placeholder"></div>
 
     <!-- Leadership Section -->
-    <section id="team" class="section">
-        <div class="container">
-            <h2>Leadership</h2>
-
+    <section class="leadership-section">
+        <div class="leader-box">
             <h3>C.S. Karunakaran – Founder & CEO</h3>
             <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike and played a crucial role in drone operations during the COVID-19 pandemic. His visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in India.</p>
+            <a href="founder.html">View Profile</a>
+        </div>
 
-            <h3>S.B. Shiva Prasaath – Co-founder & Chief Operating Officer</h3>
-            <p>S.B. Shiva Prasaath, an AI expert, co-founded PULLINAM Aerospace Technologies with the mission to integrate cutting-edge technology into aviation. He oversees strategic development, operations, and technological innovation. With a portfolio of research in AI, machine learning, and embedded systems, he contributes to the advancement of predictive maintenance, automation, and smart aviation technologies.</p>
+        <div class="leader-box">
+            <h3>S.B. Shiva Prasaath – Co-founder & COO</h3>
+            <p>S.B. Shiva Prasaath, an AI expert, co-founded PULLINAM Aerospace Technologies with the mission to integrate cutting-edge technology into aviation. He oversees strategic development, operations, and technological innovation, contributing to predictive maintenance and smart aviation technologies.</p>
+            <a href="cofounder.html">View Profile</a>
         </div>
     </section>
 
