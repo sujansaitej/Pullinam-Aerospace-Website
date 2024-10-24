@@ -1,13 +1,12 @@
 <header>
     <div class="container">
         <nav class="navbar">
-            <img class="logo" width="110" src="images/pullinam-removebg-preview.png">
+            <h1 class="logo">Pullinam Aerospace</h1>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Announcements</a></li>
+                <li><a href="mission.html">Announcements</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="milestones.html">Milestones</a></li>
-                <li><a href="goals.html">Goals</a></li>
                 <li><a href="leadership.html">Team</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -15,51 +14,54 @@
     </div>
 
     <style>
-        /* Navbar Styles */
+        /* Navbar Styles with Gradient */
         .navbar {
-            background-color: #65656563; /* Navbar background color */
-            padding: 0px 0px 15px 0px; /* Padding for the navbar */
+            background-image: linear-gradient(135deg, #180276, #6400de); /* Gradient effect */
+            padding: 10px 20px;
             text-align: center;
-            backdrop-filter: blur(5px);
-            border: 2px solid #000000; /* Border color matching the navbar */
-            border-radius: 210px; /* Rounded corners for the navbar outline */
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        /* Logo Style */
         .logo {
-            
-           
-            margin-right: 20px; /* Space between logo and links */
-            position: relative;
-            top: 10px;
+            color: #ffffff;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: inline-block;
+            margin-right: 20px;
         }
 
+        /* Navigation Links */
         .nav-links {
-            list-style-type: none; /* Remove bullet points */
+            list-style-type: none;
             padding: 0;
             margin: 0;
-            display: inline-block; /* Align links horizontally */
+            display: inline-block;
         }
 
         .nav-links li {
-            display: inline; /* Display list items inline */
-            margin: 0 5px; /* Reduced spacing between items */
+            display: inline;
+            margin: 0 10px;
         }
 
         .nav-links li a {
-            color: #000000; /* Link color */
-            text-decoration: none; /* Remove underline */
-            font-weight: 300; /* Light font weight */
-            font-size: 16px; /* Adjust font size as needed */
-            font-family: Arial, sans-serif; /* Font family for links */
-            border: 2px solid transparent; /* Border for rounded corners */
-            border-radius: 20px; /* Rounded corners for links */
-            padding: 8px 12px; /* Padding for better spacing */
-            transition: color 0.3s, border-color 0.3s; /* Transition for hover effect */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            padding: 8px 12px;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
 
+        /* Hover effect for links */
         .nav-links li a:hover {
-            color: #ffffff; /* Hover color for links */
-            border-color: #ffffff; /* Change border color on hover */
+            color: #e0e0e0;
+            border-color: #ffffff;
         }
     </style>
 </header>
