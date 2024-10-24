@@ -24,6 +24,33 @@
         .gap {
             height: 50px; /* Gap between sections */
         }
+
+        /* Footer styles */
+        footer {
+            background-color: #180276;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Home section styling */
+        .section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #180276;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 0 auto;
+            max-width: 700px;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +107,18 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
+
+                // Initialize the sidebar functionality once the navbar is loaded
+                const menuButton = document.querySelector('.menu-button');
+                const sidebar = document.querySelector('.sidebar');
+                menuButton.addEventListener('click', function() {
+                    sidebar.style.display = 'flex';
+                });
+
+                const closeButton = sidebar.querySelector('li');
+                closeButton.addEventListener('click', function() {
+                    sidebar.style.display = 'none';
+                });
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
