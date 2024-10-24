@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,12 +51,114 @@
             margin: 0 auto;
             max-width: 700px;
         }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #0c0128; /* Blue background */
+            padding: 10px 20px; /* Padding for the navbar */
+            text-align: center; /* Centered content */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
+
+        /* Logo Style */
+        .logo {
+            color: #f4f4f4; /* White text */
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: inline-block; /* Inline block for alignment */
+            margin-right: 20px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style-type: none; /* No bullets for list */
+            padding: 0;
+            margin: 0;
+            display: inline-block; /* Inline block for alignment */
+        }
+
+        .nav-links li {
+            display: inline; /* Horizontal alignment */
+            margin: 0 10px; /* Spacing between items */
+        }
+
+        .nav-links li a {
+            color: #ffffff; /* White text for links */
+            text-decoration: none; /* No underline */
+            font-weight: 300; /* Light weight */
+            font-size: 16px; /* Font size */
+            font-family: Arial, sans-serif;
+            border: 2px solid transparent; /* Border for hover effect */
+            border-radius: 20px; /* Rounded corners */
+            padding: 8px 12px; /* Padding inside the links */
+            transition: color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        /* Hover effect for links */
+        .nav-links li a:hover {
+            color: #e0e0e0; /* Light grey text on hover */
+            border-color: #ffffff; /* White border on hover */
+        }
+
+        /* Sidebar (for mobile) */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #007bff; /* Sidebar color */
+            padding-top: 60px;
+            display: none; /* Initially hidden */
+            flex-direction: column;
+            z-index: 1000; /* Keep it above other content */
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            padding: 10px 20px;
+        }
+
+        .sidebar a {
+            color: rgb(31, 0, 122);
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+                color: white;
+            }
+
+            .sidebar {
+                display: none; /* Sidebar hidden on larger screens */
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Navbar Section -->
     <div id="navbar-placeholder"></div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar-placeholder"></div>
 
     <!-- Homepage Section -->
     <section id="home" class="section">
@@ -100,7 +202,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript to load the navbar -->
+    <!-- JavaScript to load the navbar and sidebar -->
     <script>
         // Load the navbar from an external file
         fetch('navbar.html')
@@ -108,19 +210,28 @@
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
 
-                // Initialize the sidebar functionality once the navbar is loaded
+                // Load the sidebar from an external file
+                return fetch('sidebar.html');
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-placeholder').innerHTML = data;
+
+                // Initialize the sidebar functionality once the sidebar is loaded
                 const menuButton = document.querySelector('.menu-button');
                 const sidebar = document.querySelector('.sidebar');
                 menuButton.addEventListener('click', function() {
                     sidebar.style.display = 'flex';
                 });
 
-                const closeButton = sidebar.querySelector('li');
-                closeButton.addEventListener('click', function() {
-                    sidebar.style.display = 'none';
+                const sidebarLinks = sidebar.querySelectorAll('a');
+                sidebarLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        sidebar.style.display = 'none';
+                    });
                 });
             })
-            .catch(error => console.error('Error loading navbar:', error));
+            .catch(error => console.error('Error loading navbar or sidebar:', error));
     </script>
 
 </body>

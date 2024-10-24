@@ -7,16 +7,16 @@
     <title>Blogs - Pullinam Aerospace</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Body styling for dark theme */
+        /* Body styling for light theme */
         body {
-            background-color: #121212; /* Dark background color */
-            color: #e0e0e0; /* Light text color for contrast */
+            background-color: #ffffff; /* Light background color */
+            color: #333333; /* Dark text color for contrast */
             font-family: Arial, sans-serif; /* Font family */
             margin: 0;
             padding: 0;
         }
 
-        /* Container styling */
+        /* Blog Section Styles */
         .container {
             width: 90%;
             margin: 0 auto;
@@ -25,11 +25,11 @@
 
         /* Blog boxes styling */
         .blog-box {
-            background-color: #1e1e1e; /* Darker box background */
+            background-color: #f9f9f9; /* Light box background */
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
             transition: transform 0.3s ease;
         }
 
@@ -40,18 +40,18 @@
         h2 {
             text-align: center;
             margin-bottom: 40px;
-            color: #ffffff; /* White color for headings */
+            color: #007bff; /* Blue color for headings */
         }
 
         h3 {
             margin: 10px 0;
             font-size: 22px;
-            color: #ffffff; /* White color for blog titles */
+            color: #333333; /* Dark color for blog titles */
         }
 
         p {
             font-size: 16px;
-            color: #cccccc; /* Slightly lighter text for paragraphs */
+            color: #666666; /* Slightly lighter text for paragraphs */
         }
 
         .view-more {
@@ -68,12 +68,65 @@
         .view-more:hover {
             background-color: #0056b3;
         }
+
+        /* Footer styles */
+        footer {
+            background-color: #007bff; /* Footer color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Sidebar (for mobile) */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #007bff; /* Sidebar color */
+            padding-top: 60px;
+            display: none;
+            flex-direction: column;
+        }
+
+        .sidebar li {
+            padding: 10px 20px;
+        }
+
+        .sidebar a {
+            color: rgb(40, 0, 115);
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+                color: white;
+            }
+
+            .sidebar {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Placeholder for Navbar -->
+    <!-- Navbar Section -->
     <div id="navbar-placeholder"></div>
+
+    <!-- Sidebar for mobile -->
+    <div id="sidebar-placeholder"></div>
 
     <!-- Blog Section -->
     <div class="container">
@@ -109,36 +162,47 @@
 
         <!-- Blog 5 -->
         <div class="blog-box">
-            <h3>AI and Predictive Maintenance: Transforming Aircraft Safety and Efficiency</h3>
-            <p>Dive into how Pullinam Aerospace is using AI-driven predictive maintenance to enhance aircraft safety and efficiency. Discover the role of artificial intelligence in preventing mechanical failures and improving operational performance in aviation.</p>
+            <h3>Aerospace Technology: Shaping the Future of Flight</h3>
+            <p>Understand the latest advancements in aerospace technology and how Pullinam Aerospace is at the forefront of innovation. This blog covers key technologies driving the future of flight, including advanced materials and flight automation systems.</p>
             <a href="blog5.html" class="view-more">View More</a>
         </div>
-
-        <!-- Blog 6 -->
-        <div class="blog-box">
-            <h3>Flying Clubs: Inspiring the Next Generation of Pilots</h3>
-            <p>Explore Pullinam Aerospace’s initiative to establish flying clubs in 100 engineering universities across India. Learn how these clubs will democratize access to aviation and inspire the next generation of pilots and aviation enthusiasts.</p>
-            <a href="blog6.html" class="view-more">View More</a>
-        </div>
-
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Pullinam Aerospace. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript to load the navbar -->
+    <!-- JavaScript to load the navbar and sidebar -->
     <script>
         // Load the navbar from an external file
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
+
+                // Load the sidebar from an external file
+                return fetch('sidebar.html');
             })
-            .catch(error => console.error('Error loading navbar:', error));
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-placeholder').innerHTML = data;
+
+                // Initialize the sidebar functionality once the sidebar is loaded
+                const menuButton = document.querySelector('.menu-button');
+                const sidebar = document.querySelector('.sidebar');
+                menuButton.addEventListener('click', function() {
+                    sidebar.style.display = 'flex';
+                });
+
+                const sidebarLinks = sidebar.querySelectorAll('a');
+                sidebarLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        sidebar.style.display = 'none';
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading navbar or sidebar:', error));
     </script>
 
 </body>

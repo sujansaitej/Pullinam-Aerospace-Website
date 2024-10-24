@@ -62,11 +62,19 @@
                 width: 80%;
             }
         }
+
+        /* General Footer Styles */
+        footer {
+            background-color: #180276;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Placeholder for Navbar -->
+    <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
 
     <!-- Aircraft Products Section -->
@@ -74,43 +82,43 @@
         <div class="product-box">
             <h3>2-seater Microlight Aircraft</h3>
             <p>A lightweight, agile aircraft for recreational flying, designed for two passengers.</p>
-            <a href="microlight.html">View More</a>
+            <a href="microlight.html">View More</a> <!-- Check if microlight.html exists -->
         </div>
 
         <div class="product-box">
             <h3>2-seater Light-Sport Aircraft (LSA)</h3>
             <p>An efficient, high-performance aircraft for sport flying, ideal for private aviation.</p>
-            <a href="lsa.html">View More</a>
+            <a href="lsa.html">View More</a> <!-- Check if lsa.html exists -->
         </div>
 
         <div class="product-box">
             <h3>2-seater STOL and CTOL Aircraft</h3>
             <p>Short Takeoff and Landing (STOL) and Conventional Takeoff and Landing (CTOL) aircraft with electric and non-electric versions.</p>
-            <a href="stol-ctol.html">View More</a>
+            <a href="stol-ctol.html">View More</a> <!-- Check if stol-ctol.html exists -->
         </div>
 
         <div class="product-box">
             <h3>4-6 seater SAF/Electric Aircraft</h3>
             <p>Aircraft designed to be powered by Sustainable Aviation Fuel (SAF) or electric propulsion, offering eco-friendly solutions for regional transport.</p>
-            <a href="saf-electric.html">View More</a>
+            <a href="saf-electric.html">View More</a> <!-- Check if saf-electric.html exists -->
         </div>
 
         <div class="product-box">
             <h3>4-seater VTOL Aircraft</h3>
             <p>A Vertical Take-Off and Landing aircraft designed for urban mobility and short-distance travel.</p>
-            <a href="vtol.html">View More</a>
+            <a href="vtol.html">View More</a> <!-- Check if vtol.html exists -->
         </div>
 
         <div class="product-box">
             <h3>10-seater SAF Aircraft</h3>
             <p>A larger, SAF-powered aircraft designed for efficient regional flights.</p>
-            <a href="saf-10seater.html">View More</a>
+            <a href="saf-10seater.html">View More</a> <!-- Check if saf-10seater.html exists -->
         </div>
 
         <div class="product-box">
             <h3>Future Products for Space Tourism</h3>
             <p>Our vision for future space exploration includes vehicles designed for space tourism.</p>
-            <a href="space-tourism.html">View More</a>
+            <a href="space-tourism.html">View More</a> <!-- Check if space-tourism.html exists -->
         </div>
     </section>
 
@@ -128,6 +136,10 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
+                // Ensure scripts are loaded after the navbar is loaded
+                const script = document.createElement('script');
+                script.src = 'scripts.js';
+                document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>

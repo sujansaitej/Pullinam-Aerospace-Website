@@ -16,3 +16,14 @@ document.getElementById('footer-placeholder').innerHTML = `
         <p>&copy; 2024 Pullinam Aerospace Technologies. All Rights Reserved.</p>
     </footer>
 `;
+// scripts.js
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+

@@ -14,7 +14,60 @@
             margin: 0;
             padding: 0;
         }
+ /* Navbar Styles */
+           .navbar {
+            background-color: #0c0128; /* Blue background */
+            padding: 10px 20px; /* Padding for the navbar */
+            text-align: center; /* Centered content */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
 
+        /* Logo Style */
+        .logo {
+            color: #f4f4f4; /* White text */
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: inline-block; /* Inline block for alignment */
+            margin-right: 20px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style-type: none; /* No bullets for list */
+            padding: 0;
+            margin: 0;
+            display: inline-block; /* Inline block for alignment */
+        }
+
+        .nav-links li {
+            display: inline; /* Horizontal alignment */
+            margin: 0 10px; /* Spacing between items */
+        }
+
+        .nav-links li a {
+            color: #ffffff; /* White text for links */
+            text-decoration: none; /* No underline */
+            font-weight: 300; /* Light weight */
+            font-size: 16px; /* Font size */
+            font-family: Arial, sans-serif;
+            border: 2px solid transparent; /* Border for hover effect */
+            border-radius: 20px; /* Rounded corners */
+            padding: 8px 12px; /* Padding inside the links */
+            transition: color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        /* Hover effect for links */
+        .nav-links li a:hover {
+            color: #e0e0e0; /* Light grey text on hover */
+            border-color: #ffffff; /* White border on hover */
+        }
+
+        /* Milestones Section Styles */
+        .section {
+            padding: 40px 0;
+        }
         /* Contact section styles */
         .section {
             padding: 50px 0;
@@ -95,7 +148,24 @@
 <body>
 
     <!-- Placeholder for Navbar -->
-    <div id="navbar-placeholder"></div>
+    <div id="navbar-placeholder"><nav>
+        <ul>
+          <li><a href="#">Pullinam Aerospace</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="blog.html">Announcements</a></li>
+          <li class="hideOnMobile"><a href="products.html">Products</a></li>
+          <li class="hideOnMobile"><a href="milestones.html">Milestones</a></li>
+          <li class="hideOnMobile"><a href="leadership.html">Team</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav></div>
 
     <!-- Contact Section -->
     <section id="contact" class="section">

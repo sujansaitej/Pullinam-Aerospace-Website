@@ -63,8 +63,7 @@
       right: 0;
       height: 100vh;
       width: 250px;
-      background-color: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque for visibility */
       box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
       list-style: none;
       display: none;
@@ -115,13 +114,13 @@
     <ul>
       <li><a href="#">Pullinam Aerospace</a></li>
       <li class="hideOnMobile"><a href="index.html">Home</a></li>
-      <li class="hideOnMobile"><a href="mission.html">Announcements</a></li>
+      <li class="hideOnMobile"><a href="blog.html">Announcements</a></li>
       <li class="hideOnMobile"><a href="products.html">Products</a></li>
       <li class="hideOnMobile"><a href="milestones.html">Milestones</a></li>
       <li class="hideOnMobile"><a href="leadership.html">Team</a></li>
       <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
       <li class="menu-button" onclick="showSidebar()">
-        <a href="#">
+        <a href="#" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
             <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
           </svg>
@@ -133,31 +132,22 @@
   <!-- Sidebar -->
   <ul class="sidebar">
     <li onclick="hideSidebar()">
-      <a href="#">
+      <a href="#" aria-label="Close menu">
         <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
           <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
         </svg>
       </a>
     </li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="mission.html">Announcements</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="milestones.html">Milestones</a></li>
-    <li><a href="leadership.html">Team</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="index.html" onclick="hideSidebar()">Home</a></li>
+    <li><a href="blog.html" onclick="hideSidebar()">Announcements</a></li>
+    <li><a href="products.html" onclick="hideSidebar()">Products</a></li>
+    <li><a href="milestones.html" onclick="hideSidebar()">Milestones</a></li>
+    <li><a href="leadership.html" onclick="hideSidebar()">Team</a></li>
+    <li><a href="contact.html" onclick="hideSidebar()">Contact Us</a></li>
   </ul>
 
   <!-- JavaScript for Sidebar Toggling -->
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'flex';
-    }
+  <script src="scripts.js"></script>
 
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'none';
-    }
-  </script>
 </body>
 </html>
