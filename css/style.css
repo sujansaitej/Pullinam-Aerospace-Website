@@ -2,15 +2,18 @@
 body {
     font-family: 'Roboto', sans-serif; /* Simple, readable font */
     color: #333; /* Neutral color for body text */
-    background-color: #f5f5f5; /* Soft gray background */
+    background-color: #ffffff; /* Soft gray background */
     line-height: 1.7;
     margin: 0;
+    scroll-behavior: smooth;
     padding: 0;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif; /* Bold headings with clean typeface */
-    color: #004aad; /* Accent color for headings */
+    color: #3b3b3b00; /* Accent color for headings */
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(124, 124, 124));
+    background-clip: text;
     font-weight: bold;
     font-size: 40px;
 }
@@ -19,17 +22,18 @@ h1, h2, h3, h4 {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    color: #00ad25;
 }
 
 /* Navbar */
 header {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
