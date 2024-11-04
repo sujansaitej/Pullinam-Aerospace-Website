@@ -1576,13 +1576,17 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .thumb {
   position: relative;
+  text-align: center;
 }
 
 .meeting-single-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  width: 600px;
+  height: 600px;
+  margin-bottom: 50Px;
 }
-
+ 
 .meeting-single-item .thumb .price {
   position: absolute;
   left: 20px;
