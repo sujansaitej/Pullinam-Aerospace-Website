@@ -387,12 +387,12 @@ body {
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425 !important;
+  color: #00bfff !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425 !important;
+  color: #0095ff !important;
   opacity: 1;
 }
 
@@ -686,7 +686,7 @@ body {
 
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #f5a425 !important;
+    color: #25b7f5 !important;
   }
 
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -830,13 +830,13 @@ body {
 }
 
 .services .item {
-  background-color: #000000;
+  background-color: #020029;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   border-radius: 40px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding: 40px;
 }
 
@@ -935,12 +935,12 @@ body {
 /* upcoming meetings */
 
 section.upcoming-meetings {
-  background-color: #000000;
+  background-color: #003283;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
+  padding-top: 300px;
   padding-bottom: 110px;
 }
 
@@ -1157,7 +1157,7 @@ section.apply-now .item p {
 /* courses */
 
 section.our-courses {
-  background-color: #000000;
+  background-color: #e7e7e7;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1301,7 +1301,7 @@ section.our-courses {
 /* our facts */
 
 section.our-facts {
-  background-color: #000000;
+  background-color: #130042;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1368,7 +1368,7 @@ section.our-facts .video img {
 /* contact us */
 
 section.contact-us {
-  background-color: #000000;
+  background-color: #00214a;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
