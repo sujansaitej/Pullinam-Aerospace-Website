@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="TemplateMo">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
   <title>Home | Pullinam Aerosapce Technologies</title>
@@ -23,6 +22,121 @@
   <link rel="stylesheet" href="assets/css/lightbox.css">
 
 
+  <style>
+    /* Colors */
+    :root {
+      --color-white: #fff;
+      --color-primary: #5ad67d;
+      --color-grey: #e2e2e2;
+      --color-grey-dark: #a2a2a2;
+    }
+
+    /* Team Card Styles */
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem auto;
+      box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.6%;
+      background: var(--color-white);
+      line-height: 1.4;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      max-width: 700px;
+    }
+
+    .team-card:hover {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-card a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .team-card .image-section {
+      position: relative;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .team-card .info-section {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: var(--color-white);
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      transition: left 0.2s ease;
+    }
+
+    .team-card:hover .info-section {
+      left: 0;
+    }
+
+    .team-card .content-section {
+      padding: 1rem;
+      background: var(--color-white);
+      position: relative;
+    }
+
+    .team-card .content-section h1 {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+
+    .team-card .content-section h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--color-grey-dark);
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    .team-card .content-section p {
+      margin-top: 1rem;
+    }
+
+    .team-card .content-section .read-more a {
+      color: var(--color-primary);
+      display: inline-block;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .team-card .content-section .read-more a:after {
+      content: "\f061";
+      font-family: "FontAwesome";
+      margin-left: 5px;
+      opacity: 0;
+      transition: margin-left 0.3s, opacity 0.3s;
+    }
+
+    .team-card .content-section .read-more a:hover:after {
+      margin-left: 10px;
+      opacity: 1;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 640px) {
+      .team-card {
+        flex-direction: row;
+      }
+
+      .team-card .image-section {
+        flex-basis: 40%;
+        height: auto;
+      }
+
+      .team-card .content-section {
+        flex-basis: 60%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -94,7 +208,8 @@
             <div class="caption">
 
               <h2>PULLINAM AEROSPACE</h2>
-              <p>Shaping the Future of Light Aircraft Manufacturing: Pioneering Autonomous Aircraft Powered by Artificial Intelligence and Machine Learning.</p>
+              <p>Shaping the Future of Light Aircraft Manufacturing: Pioneering Autonomous Aircraft Powered by
+                Artificial Intelligence and Machine Learning.</p>
               <div class="main-button-red">
                 <div class="scroll-to-section"><a href="#contact">Connect US!</a></div>
               </div>
@@ -119,7 +234,8 @@
               </div>
               <div class="down-content">
                 <h4>Mission</h4>
-                <p>Our mission is to build a sustainable future in aviation by developing high-performance, eco-friendly light aircraft solutions that address the global emissions challenge.</p>
+                <p>Our mission is to build a sustainable future in aviation by developing high-performance, eco-friendly
+                  light aircraft solutions that address the global emissions challenge.</p>
               </div>
             </div>
 
@@ -131,7 +247,8 @@
                 <h4>Who are we ?
 
                 </h4>
-                <p>Pullinam Aerospace Technologies is an Indian startup aiming to lead light aircraft manufacturing and reduce aviation’s carbon footprint by developing autonomous, eco-friendly aircraft.</p>
+                <p>Pullinam Aerospace Technologies is an Indian startup aiming to lead light aircraft manufacturing and
+                  reduce aviation’s carbon footprint by developing autonomous, eco-friendly aircraft.</p>
               </div>
             </div>
 
@@ -142,7 +259,8 @@
 
               <div class="down-content">
                 <h4>Vision</h4>
-                <p>We are committed to reducing global emissions through innovative aircraft designs and propulsion systems, including electric, sustainable aviation fuel (SAF), and other non-electric solutions.
+                <p>We are committed to reducing global emissions through innovative aircraft designs and propulsion
+                  systems, including electric, sustainable aviation fuel (SAF), and other non-electric solutions.
                 </p>
               </div>
             </div>
@@ -164,7 +282,8 @@
               </div>
               <div class="down-content">
                 <h4>Inspiration</h4>
-                <p>This reflects our commitment to lightweight, agile, and environmentally conscious designs inspired by nature, embodied in our use of the Emerald Dove as a model.</p>
+                <p>This reflects our commitment to lightweight, agile, and environmentally conscious designs inspired by
+                  nature, embodied in our use of the Emerald Dove as a model.</p>
               </div>
             </div>
 
@@ -186,137 +305,121 @@
   </section>
   <!-- Services Area End -->
 
-  <!-- Milestone Area Start -->
+  <!-- Our Team Section -->
   <section class="upcoming-meetings" id="meetings">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h2>Milestones</h2>
+    <h2 class="text-center mb-4">Our Team</h2>
+
+    <div class="row">
+      <!-- Founder Card -->
+      <div class="col-md-6">
+        <div class="team-card" style="margin-left: 100px;">
+          <div class="image-section" style="background-image: url('assets/images/Team/founder.jpg'); ">
+            <div class="info-section">
+              <ul>
+                <li class="name"><a href="#">C.S.KARUNAKARAN</a></li>
+                <li class="role">FOUNDER & CEO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-section">
+            <h1>C.S.KARUNAKARAN</h1>
+            <h2>FOUNDER & CEO</h2>
+            <p>C.S. Karunakaran brings 15 years of experience in
+              light aircraft maintenance and drone technology. 
+              <!-- He is the inventor of Asia's First Flying Bike and played a
+              crucial role in drone operations during the COVID-19 pandemic, supporting the Chennai City Police. His
+              visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in
+              India. -->
+            </p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-12">
-          <div class="row">
-            <!-- First Row with Three Columns -->
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-01.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-
-                  <h4>Launch of Prototype</h4>
-
-                  <p>Our product line is designed to meet diverse aviation needs, from recreational microlight aircraft
-                    to advanced electric and SAF-powered vehicles for business and regional transport.</p><br><br>
-                  <div class="main-button-red">
-                    <div class="scroll-to-section"><a href="#contact">Read More</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>  
-
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-02.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-
-                  <h4>Signs MoU with MLRIT</h4>
-
-                  <p>Pullinam Aerospace Technologies has partnered with MLRIT Hyderabad to establish a pioneering Center
-                    of Excellence, dedicated to advancing sustainable innovations within the sector.</p><br><br>
-                  <div class="main-button-red">
-                    <a href="https://www.linkedin.com/posts/pullinamaerospace_mlrit-signs-mou-with-pullinam-aerospace-activity-7251977698200141826-QATR?utm_source=share&utm_medium=member_desktop"
-                      class="scroll-to-section">Read More</a>
-                  </div>
-                </div>
-              </div>
+      <!-- Co-Founder Card -->
+      <div class="col-md-6">
+        <div class="team-card" style="margin-right: 100px;">
+          <div class="image-section" style="background-image: url('assets/images/Team/co-founder.jpg');">
+            <div class="info-section">
+              <ul>
+                <li class="name"><a href="#">S.B. Shiva Prasaath</a></li>
+                <li class="role">CO-FOUNDER & CHIEF OPERATING OFFICER</li>
+              </ul>
             </div>
+          </div>
+          <div class="content-section">
+            <h1>S.B. Shiva Prasaath</h1>
+            <h2>CO-FOUNDER & CHIEF OPERATING OFFICER</h2>
+            <p>S.B. Shiva Prasaath is an accomplished AI expert
+              and visionary, co-founding PULLINAM Aerospace Technologies.
+              <!-- Aerospace Technologies with a mission to integrate cutting-edge
+              technology into the aviation industry. 
+               As Chief Operating Officer, Shiva Prasaath oversees the strategic
+              development, operational management, and technological innovation within the company.
+  
+              Beyond his leadership role, Shiva Prasaath has an impressive portfolio of research publications in the
+              fields of artificial intelligence, machine learning, and embedded systems. His work has contributed to
+              advancements in predictive maintenance systems, automation, and smart applications across industries. His
+              research is highly regarded in both academic and professional circles, and it demonstrates his commitment to
+              leveraging AI for real-world impact. -->
+            </p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-03.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-
-                  <h4>Setting up Centre of Excellence</h4>
-
-                  <p>This COE aims to advance research and development of eco-friendly aviation technologies, providing
-                    students and professionals with hands-on experience in creating cleaner, greener aerospace
-                    solutions.</p><br>
-                  <div class="main-button-red">
-                    <a href="https://www.linkedin.com/posts/pullinamaerospace_mlrit-signs-mou-with-pullinam-aerospace-activity-7251977698200141826-QATR?utm_source=share&utm_medium=member_desktop"
-                      class="scroll-to-section">Read More</a>
-                  </div>
-                </div>
-              </div>
+      <!-- Director 1 Card -->
+      <div class="col-md-6">
+        <div class="team-card" style="margin-left: 100px;">
+          <div class="image-section" style="background-image: url('https://example.com/director1-image.jpg');">
+            <div class="info-section">
+              <ul>
+                <li class="name"><a href="#">Michael Johnson</a></li>
+                <li class="role">Director of Engineering</li>
+              </ul>
             </div>
+          </div>
+          <div class="content-section">
+            <h1>Michael Johnson</h1>
+            <h2>Engineering Expert</h2>
+            <p>Michael Johnson leads our engineering team, driving innovation and ensuring high standards in our product
+              development. He has a deep background in aerospace engineering.</p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <!-- Second Row with Three Columns -->
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-04.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-
-                  <h4>Madurai Startup Fest 2024</h4>
-
-                  <p>Pullinam Aerospace Technologies proudly attended the Madurai Startup Fest 2024, showcasing its
-                    pioneering work in sustainable aerospace innovation.</p><br>
-                  <div class="main-button-red">
-                    <a href="https://www.linkedin.com/posts/pullinamaerospace_futureofflight-aviationtechnology-spacetech-activity-7251153553187098624-nnXI?utm_source=share&utm_medium=member_desktop"
-                      class="scroll-to-section">Read More</a>
-                  </div>
-                </div>
-              </div>
+      <!-- Director 2 Card -->
+      <div class="col-md-6">
+        <div class="team-card" style="margin-right: 100px;">
+          <div class="image-section" style="background-image: url('https://example.com/director2-image.jpg');">
+            <div class="info-section">
+              <ul>
+                <li class="name"><a href="#">Sarah Lee</a></li>
+                <li class="role">Director of Marketing</li>
+              </ul>
             </div>
-
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-05.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-
-                  <h4>PAT-LSA1 Product Launch</h4>
-
-                  <p>Pullinam Aerospace launched their first prototype of a 2-seater microlight aircraft weighing under
-                    700 kilograms.</p><br><br>
-                  <div class="main-button-red">
-                    <a href="https://www.linkedin.com/posts/pullinamaerospace_futureofflight-aviationtechnology-spacetech-activity-7251153553187098624-nnXI?utm_source=share&utm_medium=member_desktop"
-                      class="scroll-to-section">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-              <div class="meeting-item w-100">
-                <div class="thumb">
-                  <img src="assets/images/Milestones/milestone-06.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="down-content">
-                  <h4>Signing MoU at MLRIT</h4>
-
-                  <p>Co-Founder Shiva Prasad</p><br><br><br><br>
-                  <div class="main-button-red">
-                    <a href="https://www.linkedin.com/posts/pullinamaerospace_sharing-news-articles-from-various-publications-activity-7252188025575645184-gZyu?utm_source=share&utm_medium=member_desktop"
-                      class="scroll-to-section">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="content-section">
+            <h1>Sarah Lee</h1>
+            <h2>Marketing Specialist</h2>
+            <p>Sarah Lee spearheads our marketing efforts, building brand awareness and helping us reach a wider
+              audience. Her expertise in digital marketing has been invaluable.</p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Milestone Area End -->
+  <!-- Team Section End -->
 
   <!-- Products Area Start -->
   <section class="our-courses" id="courses">
@@ -397,7 +500,7 @@
   </section>
   <!-- Products Area End -->
 
- 
+
 
 
 
