@@ -13,9 +13,12 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Bootstrap CDN Link for CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Font Awesome File Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -309,7 +312,7 @@
 
   <!-- Team Section Start -->
   <section class="upcoming-meetings" id="meetings">
-    <h2 class="text-center mb-4 text-white">Our Team</h2>
+    <h2 class="text-center mb-4text-white">Our Team</h2>
 
     <div class="row">
       <!-- Founder Card -->
@@ -357,7 +360,7 @@
         </div>
       </div>
 
-      <!-- Director 1 Card
+      <!-- Director 1 Card -->
       <div class="col-md-6">
         <div class="team-card" style="margin-left: 100px;">
           <div class="image-section" style="background-image: url('https://example.com/director1-image.jpg');">
@@ -380,6 +383,7 @@
         </div>
       </div>
 
+      <!-- Director 2 Card -->
       <div class="col-md-6">
         <div class="team-card" style="margin-right: 100px;">
           <div class="image-section" style="background-image: url('https://example.com/director2-image.jpg');">
@@ -401,36 +405,50 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 
   <!-- Modal for Founder -->
 <div class="modal fade" id="founderModal" tabindex="-1" aria-labelledby="founderModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="founderModalLabel">C.S. Karunakaran</h5>
-        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+      <div class="modal-header" style="border-bottom: none; background-color: #f7f7f7;">
+        <h5 class="modal-title" id="founderModalLabel" style="font-weight: bold; color: #333;">C.S. Karunakaran</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="border: none; background: transparent;">
+          <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+        </button>
       </div>
-      <div class="modal-body">
-        <div class="d-flex">
-          <div class="modal-image" style="flex: 1; background-image: url('assets/images/Team/founder.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+      <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+        <div class="d-flex flex-column flex-md-row">
+          <div class="modal-image" style="flex: 1; background-image: url('assets/images/Team/founder.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;"></div>
           <div class="modal-text p-4" style="flex: 2;">
-            <h4>Founder & CEO</h4>
-            <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike and played a crucial role in drone operations during the COVID-19 pandemic, supporting the Chennai City Police. His visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in India.</p>
-            <h5>Achievements:</h5>
-            <ul>
-              <li>Inventor of Asia's First Flying Bike</li>
-              <li>Led innovative drone operations for emergency services</li>
-              <li>Expert in light aircraft maintenance</li>
-            </ul>
-            <h5>Connect with C.S. Karunakaran:</h5>
-            <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank">LinkedIn Profile</a>
+            <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Founder & CEO</h4>
+            <p style="line-height: 1.6; color: #555;">C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike and played a crucial role in drone operations during the COVID-19 pandemic, supporting the Chennai City Police. His visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in India.</p>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+            <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+              <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                <li>Inventor of Asia's First Flying Bike</li>
+                <li>Led innovative drone operations for emergency services</li>
+                <li>Expert in light aircraft maintenance</li>
+              </ul>
+            </div>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with C.S. Karunakaran:</h5>
+            <div>
+              <a href="mailto:karunakaran@pullinamaerospace.in" style="color: #000; text-decoration: none; margin-right: 10px;" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank" style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/cskarunakaran" target="_blank" style="color: #3b5998; text-decoration: none;" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="modal-footer" style="border-top: none;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
       </div>
     </div>
   </div>
@@ -439,23 +457,51 @@
   <!-- Modal for Co-Founder -->
   <div class="modal fade" id="coFounderModal" tabindex="-1" aria-labelledby="coFounderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="d-flex">
+      <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+        <div class="modal-header" style="border-bottom: none; background-color: #f7f7f7;">
+          <h5 class="modal-title" id="coFounderModalLabel" style="font-weight: bold; color: #333;">S.B. Shiva Prasaath
+          </h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
+            style="border: none; background: transparent;">
+            <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+          <div class="d-flex flex-column flex-md-row">
             <div class="modal-image"
-              style="flex: 1; background-image: url('assets/images/Team/co-founder.jpg'); background-size: cover; background-position: center; height: 300px;">
+              style="flex: 1; background-image: url('assets/images/Team/co-founder.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
             </div>
             <div class="modal-text p-4" style="flex: 2;">
-              <h3>S.B. Shiva Prasaath</h3>
-              <h4>Co-Founder & COO</h4>
-              <p>S.B. Shiva Prasaath is an accomplished AI expert with a vision to integrate cutting-edge technology
-                into the aviation industry. He oversees strategic development, operational management, and technological
-                innovation within Pullinam Aerospace Technologies.</p>
+              <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Co-Founder & COO</h4>
+              <p style="line-height: 1.6; color: #555;">S.B. Shiva Prasaath is an accomplished AI expert with a vision
+                to integrate cutting-edge technology into the aviation industry. He oversees strategic development,
+                operational management, and technological innovation within Pullinam Aerospace Technologies.</p>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+              <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+                <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                  <li>Expert in AI and Machine Learning</li>
+                  <li>Oversees technology and operations</li>
+                  <li>Visionary leader in aviation tech integration</li>
+                </ul>
+              </div>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with S.B. Shiva Prasaath:</h5>
+              <div>
+                <a href="mailto:karunakaran@pullinamaerospace.in" style="color: #000; text-decoration: none; margin-right: 10px;" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank" style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/cskarunakaran" target="_blank" style="color: #3b5998; text-decoration: none;" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
         </div>
       </div>
     </div>
@@ -464,22 +510,50 @@
   <!-- Modal for Director 1 -->
   <div class="modal fade" id="director1Modal" tabindex="-1" aria-labelledby="director1ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="d-flex">
+      <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+        <div class="modal-header" style="border-bottom: none; background-color: #f7f7f7;">
+          <h5 class="modal-title" id="director1ModalLabel" style="font-weight: bold; color: #333;">Michael Johnson</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
+            style="border: none; background: transparent;">
+            <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+          <div class="d-flex flex-column flex-md-row">
             <div class="modal-image"
-              style="flex: 1; background-image: url('https://example.com/director1-image.jpg'); background-size: cover; background-position: center; height: 300px;">
+              style="flex: 1; background-image: url('https://example.com/director1-image.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
             </div>
             <div class="modal-text p-4" style="flex: 2;">
-              <h3>Michael Johnson</h3>
-              <h4>Director of Engineering</h4>
-              <p>Michael Johnson leads our engineering team with innovation and a strong focus on high standards in
-                product development, bringing a wealth of expertise in aerospace engineering.</p>
+              <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director of Engineering</h4>
+              <p style="line-height: 1.6; color: #555;">Michael Johnson leads our engineering team with innovation and a
+                strong focus on high standards in product development, bringing a wealth of expertise in aerospace
+                engineering.</p>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+              <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+                <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                  <li>Expert in aerospace engineering</li>
+                  <li>Leader in innovation for aerospace products</li>
+                  <li>Focus on high-quality standards and performance</li>
+                </ul>
+              </div>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Michael Johnson:</h5>
+              <div>
+                <a href="mailto:karunakaran@pullinamaerospace.in" style="color: #000; text-decoration: none; margin-right: 10px;" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank" style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/cskarunakaran" target="_blank" style="color: #3b5998; text-decoration: none;" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
         </div>
       </div>
     </div>
@@ -488,27 +562,53 @@
   <!-- Modal for Director 2 -->
   <div class="modal fade" id="director2Modal" tabindex="-1" aria-labelledby="director2ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="d-flex">
+      <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+        <div class="modal-header" style="border-bottom: none; background-color: #f7f7f7;">
+          <h5 class="modal-title" id="director2ModalLabel" style="font-weight: bold; color: #333;">Sarah Lee</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
+            style="border: none; background: transparent;">
+            <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+          <div class="d-flex flex-column flex-md-row">
             <div class="modal-image"
-              style="flex: 1; background-image: url('https://example.com/director2-image.jpg'); background-size: cover; background-position: center; height: 300px;">
+              style="flex: 1; background-image: url('https://example.com/director2-image.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
             </div>
             <div class="modal-text p-4" style="flex: 2;">
-              <h3>Sarah Lee</h3>
-              <h4>Director of Marketing</h4>
-              <p>Sarah Lee leads marketing initiatives, using her digital marketing expertise to expand Pullinam
-                Aerospace Technologies' brand reach.</p>
+              <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director of Marketing</h4>
+              <p style="line-height: 1.6; color: #555;">Sarah Lee leads marketing initiatives, using her digital
+                marketing expertise to expand Pullinam Aerospace Technologies' brand reach.</p>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+              <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+                <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                  <li>Expert in digital marketing strategies</li>
+                  <li>Expanded brand presence globally</li>
+                  <li>Leader in online engagement and growth</li>
+                </ul>
+              </div>
+              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Sarah Lee:</h5>
+              <div>
+                <a href="mailto:karunakaran@pullinamaerospace.in" style="color: #000; text-decoration: none; margin-right: 10px;" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank" style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/cskarunakaran" target="_blank" style="color: #3b5998; text-decoration: none;" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Team Section End -->
 
   <!-- Products Area Start -->
@@ -688,16 +788,16 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  
+
   <!-- Popper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-  
+
   <!-- Bootstrap CDN Link for JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+
 
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
