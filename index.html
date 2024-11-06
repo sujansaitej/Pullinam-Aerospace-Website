@@ -141,6 +141,27 @@
       }
 
     }
+
+    .gallery-section {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+
+    .gallery-section h2 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+    }
   </style>
 </head>
 
@@ -186,6 +207,7 @@
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li><a href="meeting-details.html">Announcements</a></li>
               <li class="scroll-to-section"><a href="#team">Team</a></li>
+              <li class="scroll-to-section"><a href="#gallery">Gallery</a></li>
               <li class="scroll-to-section"><a href="#courses">Products</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
             </ul>
@@ -312,7 +334,7 @@
 
   <!-- Team Section Start -->
   <section class="upcoming-meetings" id="meetings">
-    <h2 class="text-center mb-4 text-white">Our Team</h2>
+    <h2 class="text-center mb-4 text-white" id="team">Our Team</h2>
 
     <div class="row">
       <!-- Founder Card -->
@@ -364,19 +386,20 @@
       <!-- Director 1 Card -->
       <div class="col-md-6">
         <div class="team-card">
-          <div class="image-section" style="background-image: url('https://example.com/director1-image.jpg');">
+          <div class="image-section" style="background-image: url('assets/images/Team/director1.jpg');">
             <div class="info-section">
               <ul>
-                <li class="name"><a href="#">Michael Johnson</a></li>
-                <li class="role">Director of Engineering</li>
+                <li class="name"><a href="#">Shri C U Hari</a></li>
+                <li class="role">Director</li>
               </ul>
             </div>
           </div>
           <div class="content-section">
-            <h1>Michael Johnson</h1>
-            <h2>Engineering Expert</h2>
-            <p>Michael Johnson leads our engineering team, driving innovation and ensuring high standards in our product
-              development.</p>
+            <h1>Shri C U Hari</h1>
+            <h2>Director</h2>
+            <p>Shri C U Hari, former Director of Aeronautics at the DRDO Headquarters, New Delhi, and Secretary of the
+              Aeronautical Research & Development Board (AR&DB) under the Ministry of Defence
+            </p>
             <p class="read-more">
               <a href="#director1Modal" data-toggle="modal">Read More</a>
             </p>
@@ -387,19 +410,19 @@
       <!-- Director 2 Card -->
       <div class="col-md-6">
         <div class="team-card">
-          <div class="image-section" style="background-image: url('https://example.com/director2-image.jpg');">
+          <div class="image-section" style="background-image: url('assets/images/Team/director2.jpg');">
             <div class="info-section">
               <ul>
-                <li class="name"><a href="#">Sarah Lee</a></li>
-                <li class="role">Director of Marketing</li>
+                <li class="name"><a href="#">Dr. G Ramesh</a></li>
+                <li class="role">Director</li>
               </ul>
             </div>
           </div>
           <div class="content-section">
-            <h1>Sarah Lee</h1>
-            <h2>Marketing Specialist</h2>
-            <p>Sarah Lee spearheads our marketing efforts, building brand awareness and helping us reach a wider
-              audience.</p>
+            <h1>Dr. G Ramesh</h1>
+            <h2>Director</h2>
+            <p>Remarkable legacy spanning over 36 years. Known for his pioneering work in Experimental Aerodynamics, he served as Senior Scientist and Head of the MAV division at the National Aerospace Laboratory, Bengaluru. 
+            </p>
             <p class="read-more">
               <a href="#director2Modal" data-toggle="modal">Read More</a>
             </p>
@@ -531,123 +554,172 @@
   </div>
 
   <!-- Modal for Director 1 -->
-  <div class="modal fade" id="director1Modal" tabindex="-1" aria-labelledby="director1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <div class="modal-header" style="border-bottom: none; background-color: #003283;">
-          <h5 class="modal-title" id="director1ModalLabel" style="font-weight: bold; color: white;">Michael Johnson</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
-            style="border: none; background: transparent;">
-            <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
-          <div class="d-flex flex-column flex-md-row">
-            <div class="modal-image"
-              style="flex: 1; background-image: url('https://example.com/director1-image.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+<div class="modal fade" id="director1Modal" tabindex="-1" aria-labelledby="director1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+      <div class="modal-header" style="border-bottom: none; background-color: #003283;">
+        <h5 class="modal-title" id="director1ModalLabel" style="font-weight: bold; color: white;">Shri C U Hari</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
+          style="border: none; background: transparent;">
+          <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+        <div class="d-flex flex-column flex-md-row">
+          <div class="modal-image"
+            style="flex: 1; background-image: url(assets/images/Team/director1.jpg); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          </div>
+          <div class="modal-text p-4" style="flex: 2;">
+            <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director</h4>
+            <p style="line-height: 1.6; color: #555;">
+              Shri C U Hari, former Director of Aeronautics at the DRDO Headquarters, has over 36 years of experience in India's aerospace sector. Known for his expertise in aircraft structural design, production management, and corporate strategy, he significantly contributed to the development of the Light Combat Aircraft (LCA) Flight Control System.
+            </p>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+            <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+              <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                <li>Former Director of Aeronautics at DRDO and Secretary of the Aeronautical Research & Development Board.</li>
+                <li>Key contributor to the LCA Flight Control System as Joint Project Director at ADE.</li>
+                <li>Experience in managing international contracts and leading UAV initiatives at Anna University.</li>
+                <li>Held leadership roles with the Aeronautical Society of India, Institute of Aeronautics, and Quality Council of India.</li>
+              </ul>
             </div>
-            <div class="modal-text p-4" style="flex: 2;">
-              <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director of Engineering</h4>
-              <p style="line-height: 1.6; color: #555;">Michael Johnson leads our engineering team with innovation and a
-                strong focus on high standards in product development, bringing a wealth of expertise in aerospace
-                engineering.</p>
-              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
-              <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
-                <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
-                  <li>Expert in aerospace engineering and product development</li>
-                  <li>Leader of the engineering team focused on high standards</li>
-                  <li>Experience in cutting-edge aerospace technologies</li>
-                </ul>
-              </div>
-              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Michael Johnson:</h5>
-              <div>
-                <a href="mailto:michael.johnson@pullinamaerospace.in"
-                  style="color: #d9534f; text-decoration: none; margin-right: 10px;" title="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/michael-johnson" target="_blank"
-                  style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/michael.johnson" target="_blank"
-                  style="color: #3b5998; text-decoration: none; margin-right: 10px;" title="Facebook">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/michael.johnson" target="_blank"
-                  style="color: #E1306C; text-decoration: none;" title="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Shri C U Hari:</h5>
+            <div>
+              <a href="mailto:shivaprasaath@pullinamaerospace.in"
+                style="color: #d9534f; text-decoration: none; margin-right: 10px;" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sbshiva" target="_blank"
+                style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/sbshiva" target="_blank"
+                style="color: #3b5998; text-decoration: none; margin-right: 10px;" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/sbshiva" target="_blank"
+                style="color: #E1306C; text-decoration: none;" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="modal-footer" style="border-top: none;">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal"
-            style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
-        </div>
+      </div>
+      <div class="modal-footer" style="border-top: none;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+          style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
       </div>
     </div>
   </div>
-  <!-- Modal for Director 2 -->
-  <div class="modal fade" id="director2Modal" tabindex="-1" aria-labelledby="director2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <div class="modal-header" style="border-bottom: none; background-color: #003283;">
-          <h5 class="modal-title" id="director2ModalLabel" style="font-weight: bold; color: white;">Sarah Williams</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
-            style="border: none; background: transparent;">
-            <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
-          <div class="d-flex flex-column flex-md-row">
-            <div class="modal-image"
-              style="flex: 1; background-image: url('https://example.com/director2-image.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
-            </div>
-            <div class="modal-text p-4" style="flex: 2;">
-              <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director of Operations</h4>
-              <p style="line-height: 1.6; color: #555;">Sarah Williams brings expertise in operations management,
-                ensuring that Pullinam Aerospace runs smoothly and efficiently across all departments, focusing on
-                growth and scale.</p>
-              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
-              <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
-                <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
-                  <li>Leader in operations management and organizational scaling</li>
-                  <li>Improved efficiency in operations across teams</li>
-                  <li>Extensive experience in strategic planning</li>
-                </ul>
-              </div>
-              <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Sarah Williams:</h5>
-              <div>
-                <a href="mailto:sarah.williams@pullinamaerospace.in"
-                  style="color: #d9534f; text-decoration: none; margin-right: 10px;" title="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sarah-williams" target="_blank"
-                  style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/sarah.williams" target="_blank"
-                  style="color: #3b5998; text-decoration: none; margin-right: 10px;" title="Facebook">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/sarah.williams" target="_blank"
-                  style="color: #E1306C; text-decoration: none;" title="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer" style="border-top: none;">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal"
-            style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
+
+  <!-- Modal for Director 2 -->
+<div class="modal fade" id="director2Modal" tabindex="-1" aria-labelledby="director2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+      <div class="modal-header" style="border-bottom: none; background-color: #003283;">
+        <h5 class="modal-title" id="director2ModalLabel" style="font-weight: bold; color: white;">Dr. G Ramesh</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"
+          style="border: none; background: transparent;">
+          <span aria-hidden="true" style="font-size: 1.5rem; color: #333;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+        <div class="d-flex flex-column flex-md-row">
+          <div class="modal-image"
+            style="flex: 1; background-image: url('assets/images/Team/director2.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; border: 2px solid #e2e2e2; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          </div>
+          <div class="modal-text p-4" style="flex: 2;">
+            <h4 style="font-weight: bold; margin-bottom: 10px; color: #5a5a5a;">Director of Research</h4>
+            <p style="line-height: 1.6; color: #555;">
+              Dr. G Ramesh brings over 36 years of groundbreaking experience in Experimental Aerodynamics. A former Senior Scientist at the National Aerospace Laboratory, he pioneered research in Advanced Flow Diagnostics and Micro Air Vehicles. With over 90 publications and 50 invited talks, Dr. Ramesh is a key thought leader in UAV and aerodynamics research.
+            </p>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Achievements:</h5>
+            <div style="background-color: #f8f9fa; border-radius: 5px; padding: 10px; margin-top: 10px;">
+              <ul style="list-style-type: disc; padding-left: 20px; margin: 0; color: #555;">
+                <li>Former Head of the MAV division at National Aerospace Laboratory.</li>
+                <li>Advisory roles with Gopalan Aerospace, NDRF, and Government of Karnataka on UAV applications.</li>
+                <li>Extensive academic experience as Dean and Visiting Professor in Aeronautics.</li>
+                <li>Member of AR&DB UAV panel, SIGMA panel, and research council at CSMCRI, Bhavnagar.</li>
+              </ul>
+            </div>
+            <h5 style="font-weight: bold; margin-top: 20px; color: #5a5a5a;">Connect with Dr. G Ramesh:</h5>
+            <div>
+              <a href="mailto:shivaprasaath@pullinamaerospace.in"
+                style="color: #d9534f; text-decoration: none; margin-right: 10px;" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sbshiva" target="_blank"
+                style="color: #0077b5; text-decoration: none; margin-right: 10px;" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/sbshiva" target="_blank"
+                style="color: #3b5998; text-decoration: none; margin-right: 10px;" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/sbshiva" target="_blank"
+                style="color: #E1306C; text-decoration: none;" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="border-top: none;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+          style="background-color: #6c757d; border: none; transition: background-color 0.3s;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Team Section End -->
+
+  <!-- Gallery Section Start -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+
+      <div id="galleryCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/Gallery/1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/2.png" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/3.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/4.jpg" class="d-block w-100" alt="Image 4">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/5.jpg" class="d-block w-100" alt="Image 5">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/6.png" class="d-block w-100" alt="Image 6">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/7.png" class="d-block w-100" alt="Image 7">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Gallery/8.jpg" class="d-block w-100" alt="Image 8">
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section End -->
 
   <!-- Products Area Start -->
   <section class="our-courses" id="courses">
@@ -828,6 +900,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
   <!-- Popper.js -->
