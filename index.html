@@ -13,6 +13,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CDN Link for CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
   <!-- Additional CSS Files -->
@@ -305,9 +307,9 @@
   </section>
   <!-- Services Area End -->
 
-  <!-- Our Team Section -->
+  <!-- Team Section Start -->
   <section class="upcoming-meetings" id="meetings">
-    <h2 class="text-center mb-4">Our Team</h2>
+    <h2 class="text-center mb-4 text-white">Our Team</h2>
 
     <div class="row">
       <!-- Founder Card -->
@@ -324,15 +326,9 @@
           <div class="content-section">
             <h1>C.S.KARUNAKARAN</h1>
             <h2>FOUNDER & CEO</h2>
-            <p>C.S. Karunakaran brings 15 years of experience in
-              light aircraft maintenance and drone technology. 
-              <!-- He is the inventor of Asia's First Flying Bike and played a
-              crucial role in drone operations during the COVID-19 pandemic, supporting the Chennai City Police. His
-              visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in
-              India. -->
-            </p>
+            <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology.</p>
             <p class="read-more">
-              <a href="#">Read More</a>
+              <a href="#founderModal" data-toggle="modal">Read More</a>
             </p>
           </div>
         </div>
@@ -352,27 +348,16 @@
           <div class="content-section">
             <h1>S.B. Shiva Prasaath</h1>
             <h2>CO-FOUNDER & CHIEF OPERATING OFFICER</h2>
-            <p>S.B. Shiva Prasaath is an accomplished AI expert
-              and visionary, co-founding PULLINAM Aerospace Technologies.
-              <!-- Aerospace Technologies with a mission to integrate cutting-edge
-              technology into the aviation industry. 
-               As Chief Operating Officer, Shiva Prasaath oversees the strategic
-              development, operational management, and technological innovation within the company.
-  
-              Beyond his leadership role, Shiva Prasaath has an impressive portfolio of research publications in the
-              fields of artificial intelligence, machine learning, and embedded systems. His work has contributed to
-              advancements in predictive maintenance systems, automation, and smart applications across industries. His
-              research is highly regarded in both academic and professional circles, and it demonstrates his commitment to
-              leveraging AI for real-world impact. -->
-            </p>
+            <p>S.B. Shiva Prasaath is an accomplished AI expert and visionary, co-founding PULLINAM Aerospace
+              Technologies.</p>
             <p class="read-more">
-              <a href="#">Read More</a>
+              <a href="#coFounderModal" data-toggle="modal">Read More</a>
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Director 1 Card
+      <!-- Director 1 Card -->
       <div class="col-md-6">
         <div class="team-card" style="margin-left: 100px;">
           <div class="image-section" style="background-image: url('https://example.com/director1-image.jpg');">
@@ -387,14 +372,15 @@
             <h1>Michael Johnson</h1>
             <h2>Engineering Expert</h2>
             <p>Michael Johnson leads our engineering team, driving innovation and ensuring high standards in our product
-              development. He has a deep background in aerospace engineering.</p>
+              development.</p>
             <p class="read-more">
-              <a href="#">Read More</a>
+              <a href="#director1Modal" data-toggle="modal">Read More</a>
             </p>
           </div>
         </div>
       </div>
 
+      <!-- Director 2 Card -->
       <div class="col-md-6">
         <div class="team-card" style="margin-right: 100px;">
           <div class="image-section" style="background-image: url('https://example.com/director2-image.jpg');">
@@ -409,15 +395,121 @@
             <h1>Sarah Lee</h1>
             <h2>Marketing Specialist</h2>
             <p>Sarah Lee spearheads our marketing efforts, building brand awareness and helping us reach a wider
-              audience. Her expertise in digital marketing has been invaluable.</p>
+              audience.</p>
             <p class="read-more">
-              <a href="#">Read More</a>
+              <a href="#director2Modal" data-toggle="modal">Read More</a>
             </p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
+
+  <!-- Modal for Founder -->
+<div class="modal fade" id="founderModal" tabindex="-1" aria-labelledby="founderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="founderModalLabel">C.S. Karunakaran</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex">
+          <div class="modal-image" style="flex: 1; background-image: url('assets/images/Team/founder.jpg'); background-size: cover; background-position: center; height: 300px;"></div>
+          <div class="modal-text p-4" style="flex: 2;">
+            <h4>Founder & CEO</h4>
+            <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike and played a crucial role in drone operations during the COVID-19 pandemic, supporting the Chennai City Police. His visionary leadership is driving Pullinam’s mission to revolutionize ultralight aircraft manufacturing in India.</p>
+            <h5>Achievements:</h5>
+            <ul>
+              <li>Inventor of Asia's First Flying Bike</li>
+              <li>Led innovative drone operations for emergency services</li>
+              <li>Expert in light aircraft maintenance</li>
+            </ul>
+            <h5>Connect with C.S. Karunakaran:</h5>
+            <a href="https://www.linkedin.com/in/cskarunakaran" target="_blank">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal for Co-Founder -->
+  <div class="modal fade" id="coFounderModal" tabindex="-1" aria-labelledby="coFounderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex">
+            <div class="modal-image"
+              style="flex: 1; background-image: url('assets/images/Team/co-founder.jpg'); background-size: cover; background-position: center; height: 300px;">
+            </div>
+            <div class="modal-text p-4" style="flex: 2;">
+              <h3>S.B. Shiva Prasaath</h3>
+              <h4>Co-Founder & COO</h4>
+              <p>S.B. Shiva Prasaath is an accomplished AI expert with a vision to integrate cutting-edge technology
+                into the aviation industry. He oversees strategic development, operational management, and technological
+                innovation within Pullinam Aerospace Technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Director 1 -->
+  <div class="modal fade" id="director1Modal" tabindex="-1" aria-labelledby="director1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex">
+            <div class="modal-image"
+              style="flex: 1; background-image: url('https://example.com/director1-image.jpg'); background-size: cover; background-position: center; height: 300px;">
+            </div>
+            <div class="modal-text p-4" style="flex: 2;">
+              <h3>Michael Johnson</h3>
+              <h4>Director of Engineering</h4>
+              <p>Michael Johnson leads our engineering team with innovation and a strong focus on high standards in
+                product development, bringing a wealth of expertise in aerospace engineering.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Director 2 -->
+  <div class="modal fade" id="director2Modal" tabindex="-1" aria-labelledby="director2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex">
+            <div class="modal-image"
+              style="flex: 1; background-image: url('https://example.com/director2-image.jpg'); background-size: cover; background-position: center; height: 300px;">
+            </div>
+            <div class="modal-text p-4" style="flex: 2;">
+              <h3>Sarah Lee</h3>
+              <h4>Director of Marketing</h4>
+              <p>Sarah Lee leads marketing initiatives, using her digital marketing expertise to expand Pullinam
+                Aerospace Technologies' brand reach.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Team Section End -->
 
   <!-- Products Area Start -->
@@ -597,6 +689,16 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  
+  <!-- Bootstrap CDN Link for JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
