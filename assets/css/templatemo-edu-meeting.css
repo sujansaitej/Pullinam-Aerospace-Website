@@ -699,7 +699,7 @@ body {
 
 /* upcoming meetings */
 
-section.upcoming-meetings {
+section.teamAnnouncement {
   background-color: #003283;
   background-position: center center;
   background-attachment: fixed;
@@ -709,18 +709,18 @@ section.upcoming-meetings {
   padding-bottom: 110px;
 }
 
-section.upcoming-meetings .section-heading {
+section.teamAnnouncement .section-heading {
   text-align: center;
 }
 
-section.upcoming-meetings .categories {
+section.teamAnnouncement .categories {
   background-color: #fff;
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
 }
 
-section.upcoming-meetings .categories h4 {
+section.teamAnnouncement .categories h4 {
   font-size: 18px;
   font-weight: 600;
   color: #1f272b;
@@ -729,55 +729,55 @@ section.upcoming-meetings .categories h4 {
   border-bottom: 1px solid #eee;
 }
 
-section.upcoming-meetings .categories ul li {
+section.teamAnnouncement .categories ul li {
   display: inline-block;
   margin-bottom: 15px;
 }
 
-section.upcoming-meetings .categories ul li a {
+section.teamAnnouncement .categories ul li a {
   font-size: 15px;
   color: #1f272b;
   font-weight: 500;
   transition: all .3s;
 }
 
-section.upcoming-meetings .categories ul li a:hover {
+section.teamAnnouncement .categories ul li a:hover {
   color: #a12c2f;
 }
 
-section.upcoming-meetings .categories .main-button-red {
+section.teamAnnouncement .categories .main-button-red {
   border-top: 1px solid #eee;
   padding-top: 30px;
   margin-top: 15px;
 }
 
-section.upcoming-meetings .categories .main-button-red a {
+section.teamAnnouncement .categories .main-button-red a {
   width: 100%;
   text-align: center;
 }
 
-.meeting-item {
+.announcement-item {
   margin-bottom: 30px;
   display: block;
 
 }
 
-.meeting-item .thumb {
+.announcement-item .thumb {
   position: relative;
 }
 
-.meeting-item .thumb img {
+.announcement-item .thumb img {
   border-top-right-radius: 120px;
   border-top-left-radius: 20px;
 }
 
-.meeting-item .thumb .price {
+.announcement-item .thumb .price {
   position: absolute;
   left: 20px;
   top: 20px;
 }
 
-.meeting-item .thumb .price span {
+.announcement-item .thumb .price span {
   font-size: 16px;
   color: #1f272b;
   font-weight: 600;
@@ -786,35 +786,35 @@ section.upcoming-meetings .categories .main-button-red a {
   border-radius: 10px;
 }
 
-.meeting-item .down-content {
+.announcement-item .down-content {
   background-color: #ffffff;
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.meeting-item .down-content .date {
+.announcement-item .down-content .date {
 
   text-align: center;
   display: inline-block;
   margin-right: 20px;
 }
 
-.meeting-item .down-content .date h6 {
+.announcement-item .down-content .date h6 {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   color: #a12c2f;
 }
 
-.meeting-item .down-content .date span {
+.announcement-item .down-content .date span {
   display: block;
   color: #1f272b;
   font-size: 22px;
   margin-top: 7px;
 }
 
-.meeting-item .down-content h4 {
+.announcement-item .down-content h4 {
   font-size: 18px;
   color: #1f272b;
   font-weight: 600;
@@ -822,7 +822,7 @@ section.upcoming-meetings .categories .main-button-red a {
   margin-bottom: 15px;
 }
 
-.meeting-item .down-content p {
+.announcement-item .down-content p {
   margin-left: 0px;
   color: #000000;
   font-size: 14px;
@@ -830,7 +830,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 /* courses */
 
-section.our-courses {
+section.our-products {
   background-color: #e7e7e7;
   background-position: center center;
   background-attachment: fixed;
@@ -840,11 +840,11 @@ section.our-courses {
   padding-bottom: 130px;
 }
 
-.our-courses .item .down-content {
+.our-products .item .down-content {
   background-color: #fff;
 }
 
-.our-courses .item .down-content h4 {
+.our-products .item .down-content h4 {
   padding: 25px;
   font-size: 18px;
   color: #1f272b;
@@ -852,21 +852,21 @@ section.our-courses {
   border-bottom: 1px solid #eee;
 }
 
-.our-courses .item .down-content .info {
+.our-products .item .down-content .info {
   padding: 25px;
 }
 
-.our-courses .item .down-content .info ul li {
+.our-products .item .down-content .info ul li {
   display: inline-block;
   margin-right: 1px;
 }
 
-.our-courses .item .down-content .info ul li i {
+.our-products .item .down-content .info ul li i {
   color: #f5a425;
   font-size: 14px;
 }
 
-.our-courses .item .down-content .info span {
+.our-products .item .down-content .info span {
   color: #a12c2f;
   font-size: 15px;
   font-weight: 600;
@@ -875,7 +875,7 @@ section.our-courses {
   width: 100%;
 }
 
-.our-courses .owl-nav {
+.our-products .owl-nav {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -883,14 +883,14 @@ section.our-courses {
   transform: translateY(-45px);
 }
 
-.our-courses .owl-dots {
+.our-products .owl-dots {
   display: inline-block;
   text-align: center;
   width: 100%;
   margin-top: 40px;
 }
 
-.our-courses .owl-dots .owl-dot {
+.our-products .owl-dots .owl-dot {
   transition: all .5s;
   width: 7px;
   height: 7px;
@@ -900,25 +900,25 @@ section.our-courses {
   outline: none;
 }
 
-.our-courses .owl-dots .active {
+.our-products .owl-dots .active {
   width: 24px;
   height: 8px;
   border-radius: 4px;
 }
 
-.our-courses .owl-nav .owl-prev {
+.our-products .owl-nav .owl-prev {
   margin-right: 10px;
   outline: none;
   position: absolute;
   left: -80px;
 }
 
-.our-courses .owl-nav .owl-prev span,
-.our-courses .owl-nav .owl-next span {
+.our-products .owl-nav .owl-prev span,
+.our-products .owl-nav .owl-next span {
   opacity: 0;
 }
 
-.our-courses .owl-nav .owl-prev:before {
+.our-products .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #1e1e1e;
@@ -932,32 +932,32 @@ section.our-courses {
   line-height: 50px;
 }
 
-.our-courses .owl-nav .owl-prev {
+.our-products .owl-nav .owl-prev {
   opacity: 1;
   transition: all .5s;
 }
 
-.our-courses .owl-nav .owl-prev:hover {
+.our-products .owl-nav .owl-prev:hover {
   opacity: 0.9;
 }
 
-.our-courses .owl-nav .owl-next {
+.our-products .owl-nav .owl-next {
   opacity: 1;
   transition: all .5s;
 }
 
-.our-courses .owl-nav .owl-next:hover {
+.our-products .owl-nav .owl-next:hover {
   opacity: 0.9;
 }
 
-.our-courses .owl-nav .owl-next {
+.our-products .owl-nav .owl-next {
   margin-left: 10px;
   outline: none;
   position: absolute;
   right: -85px;
 }
 
-.our-courses .owl-nav .owl-next:before {
+.our-products .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #1e1e1e;
@@ -1131,11 +1131,11 @@ section.heading-page h2 {
     left: -25px;
   }
 
-  .our-courses .owl-nav .owl-next {
+  .our-products .owl-nav .owl-next {
     right: -30px;
   }
 
-  .our-courses .owl-nav .owl-prev {
+  .our-products .owl-nav .owl-prev {
     left: -25px;
   }
 }
@@ -1149,11 +1149,11 @@ section.heading-page h2 {
     left: -65px;
   }
 
-  .our-courses .owl-nav .owl-next {
+  .our-products .owl-nav .owl-next {
     right: -70px;
   }
 
-  .our-courses .owl-nav .owl-prev {
+  .our-products .owl-nav .owl-prev {
     left: -65px;
   }
 }
@@ -1167,11 +1167,11 @@ section.heading-page h2 {
     left: -25px;
   }
 
-  .our-courses .owl-nav .owl-next {
+  .our-products .owl-nav .owl-next {
     right: -30px;
   }
 
-  .our-courses .owl-nav .owl-prev {
+  .our-products .owl-nav .owl-prev {
     left: -25px;
   }
 }
@@ -1185,11 +1185,11 @@ section.heading-page h2 {
     display: none;
   }
 
-  .our-courses .owl-nav .owl-next {
+  .our-products .owl-nav .owl-next {
     display: none;
   }
 
-  .our-courses .owl-nav .owl-prev {
+  .our-products .owl-nav .owl-prev {
     display: none;
   }
 }
@@ -1215,11 +1215,11 @@ section.heading-page h2 {
     margin-top: 60px;
   }
 
-  section.upcoming-meetings {
+  section.teamAnnouncement {
     padding-top: 400px;
   }
 
-  section.upcoming-meetings .categories {
+  section.teamAnnouncement .categories {
     margin-right: 0px;
     margin-bottom: 30px;
   }
